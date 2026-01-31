@@ -1,34 +1,34 @@
 [
   {
-    "social": "../../images/icon-facebook.svg",
+    "social": "images/icon-facebook.svg",
     "name":"@nathanf",
     "number": "1987",
     "followers": "Followers",
-    "mark": "../images/icon-up.svg",
+    "mark": "images/icon-up.svg",
     "movement": "12 Today"
   },
   {
-    "social": "../images/icon-twitter.svg",
+    "social": "images/icon-twitter.svg",
     "name": "@nathanf",
     "number": "1044",
     "followers": "Followers",
-    "mark": "../images/icon-up.svg",
+    "mark": "images/icon-up.svg",
     "movement": "99 Today"
   },
   {
-    "social": "../images/icon-instagram.svg",
+    "social": "images/icon-instagram.svg",
     "name": "@realnathanf",
     "number": "11K",
     "followers": "Followers",
-    "mark": "../images/icon-up.svg",
+    "mark": "images/icon-up.svg",
     "movement": "1099 Today"
   },
   {
-    "social": "../images/icon-youtube.svg",
+    "social": "images/icon-youtube.svg",
     "name": "Nathan F.",
     "number": "8239",
     "followers": "Subscribers",
-    "mark": "../images/icon-down.svg",
+    "mark": "images/icon-down.svg",
     "movement": "144 Today"
   }
 ]
