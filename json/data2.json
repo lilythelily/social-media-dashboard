@@ -1,0 +1,58 @@
+[
+  {
+    "title": "Page Views",
+    "social": "../images/icon-facebook.svg",
+    "number": "87",
+    "mark": "../images/icon-up.svg",
+    "movement": "3%"
+  },
+  {
+    "title": "Likes",
+    "social": "../images/icon-facebook.svg",
+    "number": "52",
+    "mark": "../images/icon-down.svg",
+    "movement": "2%"
+  },
+  {
+    "title": "Likes",
+    "social": "../images/icon-instagram.svg",
+    "number": "5462",
+    "mark": "../images/icon-up.svg",
+    "movement": "2257%"
+  },
+  {
+    "title": "Profile Views",
+    "social": "../images/icon-instagram.svg",
+    "number": "52k",
+    "mark": "../images/icon-up.svg",
+    "movement": "1375%"
+  },
+  {
+    "title": "Retweets",
+    "social": "../images/icon-twitter.svg",
+    "number": "117",
+    "mark": "../images/icon-up.svg",
+    "movement": "303%"
+  },
+  {
+    "title": "Likes",
+    "social": "../images/icon-twitter.svg",
+    "number": "507",
+    "mark": "../images/icon-up.svg",
+    "movement": "553%"
+  },
+  {
+    "title": "Likes",
+    "social": "../images/icon-youtube.svg",
+    "number": "107",
+    "mark": "../images/icon-down.svg",
+    "movement": "19%"
+  },
+  {
+    "title": "Total Views",
+    "social": "../images/icon-youtube.svg",
+    "number": "1407",
+    "mark": "../images/icon-down.svg",
+    "movement": "12%"
+  }
+]

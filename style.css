@@ -1,0 +1,453 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-font: "Inter", sans-serif;
+  --fw400: 400;
+  --fw700: 700;
+  --transition: all 0.4s ease;
+  --green500: hsl(163, 72%, 41%);
+  --red500: hsl(356, 69%, 56%);
+
+  --blue600-fb: hsl(208, 92%, 53%);
+  --blue500-tw: hsl(203, 89%, 53%);
+  --IG-gradient: linear-gradient(
+    to right,
+    hsl(37, 97%, 70%),
+    hsl(5, 77%, 71%),
+    hsl(329, 70%, 58%)
+  );
+  --red700-YouTube: hsl(348, 97%, 39%);
+
+  /* Dark Theme */
+  --toggle-gradient: linear-gradient(
+    to right,
+    hsl(210, 79%, 56%),
+    hsl(146, 68%, 55%)
+  );
+
+  /* Light Theme */
+
+  --gray400-toggle: hsl(230, 22%, 74%);
+
+  /* Neutral
+Dark Theme */
+
+  --gray950-bg: hsl(230, 17%, 14%);
+  --gray900-pattern: hsl(232, 19%, 15%);
+  --navy950-cardBg: hsl(228, 28%, 20%);
+  --gray400-text: hsl(230, 22%, 74%);
+  --white-text: hsl(0, 100%, 100%);
+  --hover-bg: hsl(229, 27%, 28%);
+
+  /* Light Theme */
+
+  --white-bg: hsl(0, 100%, 100%);
+  --blue50-pattern: hsl(225, 100%, 98%);
+  --navy50-cardBg: hsl(227, 47%, 96%);
+  --gray650-text: hsl(228, 12%, 44%);
+  --gray950-text: hsl(230, 17%, 14%);
+}
+
+
+body {
+  font-size: 14px;
+  font-family: var(--primary-font);
+  background: var(--gray950-bg);
+  color: var(--white-text);
+  font-weight: var(--fw400);
+  transition: var(--transition);
+}
+
+.body-light {
+  background: var(--white-bg);
+  color: var(--gray950-text);
+}
+
+main {
+  width: 80vw;
+  max-width: 68.75rem;
+  height: 100%;
+  margin: 3rem auto;
+}
+
+.hide {
+  display: none;
+}
+
+.top-bg {
+  width: 100%;
+  min-width: 100vw;
+  height: 10rem;
+  background: var(--gray900-pattern);
+  position: absolute;
+  z-index: -20;
+  top: 0;
+  left: 0;
+  border-radius: 0 0 1.25rem 1.25rem;
+  transition: var(--transition);
+}
+
+.top-light {
+  background: var(--blue50-pattern);
+}
+
+h1 {
+  font-size: 1.75rem;
+}
+
+.total-followers,
+.mode {
+  color: var(--gray400-text);
+  font-weight: var(--fw700);
+}
+
+.h1-p {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.toggle-btn {
+  width: 3rem;
+  height: 1.5rem;
+  background: var(--toggle-gradient);
+  border-radius: 6.25rem;
+  cursor: pointer;
+  position: relative;
+}
+.toggle-circle {
+  position: absolute;
+  width: 1.125rem;
+  height: 1.125rem;
+  background: var(--navy950-cardBg);
+  border-radius: 6.25rem;
+  top: 0.1875rem;
+  left: 0.1875rem;
+  transition: var(--transition);
+}
+.toggle-active {
+  left: 1.5625rem;
+  background: var(--blue50-pattern);
+}
+
+.toggle-light {
+  background: var(--gray400-toggle);
+}
+
+.toggle-light:hover {
+  background: var(--toggle-gradient);
+}
+
+.toggle-text {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* === social cards === */
+
+.section__stats-card-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  background-image: url("./images/icon-facebook.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.handle-name {
+  color: var(--gray400-text);
+  font-size: 0.8125rem;
+  font-weight: var(--fw700);
+}
+
+.icon-handle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.section__stats-number {
+  color: var(--white-text);
+  font-size: 3.5rem;
+  font-weight: var(--fw700);
+  text-align: center;
+}
+
+.section__stats-followers {
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+  color: var(--gray400-text);
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.section__mark {
+  width: 0.625rem;
+  height: 0.625rem;
+  background-image: url("./images/icon-up.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.section__movement {
+  color: var(--green500);
+  font-weight: var(--fw700);
+}
+
+.mark-movement {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  justify-content: center;
+}
+
+.section__stats-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--navy950-cardBg);
+  border-radius: 0.375rem;
+  width: 100%;
+  padding-top: 1.75rem;
+  padding-bottom: 1.5rem;
+  /* border-top: 0.3125rem solid var(--blue600-fb); */
+  cursor: pointer;
+}
+
+.section__stats-card:hover {
+  background: var(--hover-bg);
+}
+
+.border-topIg {
+  position: absolute;
+  z-index: 12;
+  width: 100%;
+  height: 0.25rem;
+  background-image: var(--IG-gradient);
+  top: 0;
+  left: 0;
+  border-radius: 0.375rem 0.375rem 0 0;
+}
+
+.border-topFb {
+  position: absolute;
+  z-index: 12;
+  width: 100%;
+  height: 0.25rem;
+  top: 0;
+  left: 0;
+  border-radius: 0.375rem 0.375rem 0 0;
+  background: var(--blue600-fb);
+}
+
+.border-topYt {
+  position: absolute;
+  z-index: 12;
+  width: 100%;
+  height: 0.25rem;
+  top: 0;
+  left: 0;
+  border-radius: 0.375rem 0.375rem 0 0;
+  background: var(--red700-YouTube);
+}
+
+.border-topTw {
+  position: absolute;
+  z-index: 12;
+  width: 100%;
+  height: 0.25rem;
+  top: 0;
+  left: 0;
+  border-radius: 0.375rem 0.375rem 0 0;
+  background: var(--blue500-tw);
+}
+
+.section__stats {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2.5rem 0;
+  gap: 1.5rem;
+}
+
+/* === overview === */
+
+h2 {
+  font-size: 1.5rem;
+}
+
+/* --- cards --- */
+
+.section__overview-title {
+  color: var(--gray400-text);
+  font-weight: var(--fw700);
+}
+
+.section__overview-social {
+  width: 1.25rem;
+  height: 1.25rem;
+  background-image: url("./images/icon-facebook.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  display: flex;
+  justify-self: end;
+}
+
+.section__overview-number {
+  font-size: 2rem;
+  color: var(--white-text);
+  font-weight: var(--fw700);
+}
+
+.overview-markMovement {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  justify-content: flex-end;
+}
+
+.overview-mark {
+  width: 0.625rem;
+  height: 0.625rem;
+  background-image: url("./images/icon-up.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.overview-movement {
+  color: var(--green500);
+  font-weight: var(--fw700);
+}
+
+.color-red {
+  color: var(--red500);
+  font-weight: var(--fw700);
+}
+
+.section__overview-card {
+  background: var(--navy950-cardBg);
+  border-radius: 0.375rem;
+  width: 100%;
+  padding: 1.5rem;
+  display: grid;
+  grid-template-columns: 60% auto;
+  gap: 1.5rem;
+  cursor: pointer;
+}
+
+.section__overview-card:hover {
+  background: var(--hover-bg);
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+  gap: 1.5rem;
+  margin: 2rem auto 2.5rem auto;
+}
+
+.card-light {
+  background: var(--navy50-cardBg);
+  transition: var(--transition);
+}
+
+.card-light:hover {
+  background: hsl(233, 18%, 91%);
+}
+
+.text-light {
+  color: var(--gray650-text);
+}
+
+.text-black {
+  color: var(--gray950-text);
+}
+
+footer {
+  margin-bottom: 1.5rem;
+}
+
+/* === responsive === */
+
+@media screen and (max-width: 68.75rem) {
+  .section__stats-number {
+    font-size: 2.5rem;
+  }
+  .section__overview-card {
+    padding: 1rem;
+    grid-template-columns: 1fr 1fr;
+  }
+  .section__stats,
+  .cards-container {
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 61.25rem) {
+  main {
+    width: 90vw;
+  }
+  .section__stats,
+  .cards-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 38.75rem) {
+  .top-bg {
+    height: 16.25rem;
+  }
+  .h1-p {
+    width: 100%;
+  }
+  .total-followers {
+    width: 100%;
+    padding-bottom: 1.5rem;
+    border-bottom: 0.0313rem solid hsla(230, 22%, 74%, 0.4);
+  }
+  .title-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+  .toggle-text {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .section__stats,
+  .cards-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .section__stats-number {
+    font-size: 3.5rem;
+  }
+}
+
+@media screen and (max-width: 30rem) {
+  .section__overview-card {
+    padding: 1.5rem;
+  }
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Social Media Dashboard</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        color: hsl(231, 9%, 57%);
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="top-bg"></div>
+      <header class="title-wrapper">
+        <div class="h1-p">
+          <h1>Social Media Dashboard</h1>
+          <p class="total-followers">Total Followers: 23,004</p>
+        </div>
+        <div class="toggle-text">
+          <p class="mode">Dark Mode</p>
+          <div class="toggle-btn"><div class="toggle-circle"></div></div>
+        </div>
+      </header>
+
+      <!-- === social cards === -->
+
+      <section class="section__stats">
+        <div class="section__stats-card">
+          <div class="icon-handle">
+            <div class="section__stats-card-icon"></div>
+            <p class="handle-name"></p>
+          </div>
+
+          <p class="section__stats-number"></p>
+          <p class="section__stats-followers"></p>
+          <div class="mark-movement">
+            <div class="section__mark"></div>
+            <p class="section__movement"></p>
+          </div>
+          <div class="border-top"></div>
+        </div>
+      </section>
+
+      <!-- === overview === -->
+
+      <section class="section__overview">
+        <h2>Overview - Today</h2>
+        <div class="cards-container">
+          <div class="section__overview-card">
+            <p class="section__overview-title"></p>
+            <div class="section__overview-social"></div>
+            <p class="section__overview-number"></p>
+            <div class="overview-markMovement">
+              <div class="overview-mark"></div>
+              <p class="overview-movement"></p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by KA.
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>
