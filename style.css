@@ -82,7 +82,7 @@ main {
 
 .top-bg {
   width: 100%;
-  min-width: 100vw;
+  /* min-width: 100vw; */
   height: 10rem;
   background: var(--gray900-pattern);
   position: absolute;
